@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Frame</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+  <h1>NEON FRAME</h1>
+  <p>Analog souls • Electric nights</p>
+</header>
+
+<section class="gallery">
+  <div class="card" onclick="openModal('images/photo1.jpg')">
+    <img src="images/photo1.jpg">
+    <div class="overlay">
+      <a href="https://gumroad.com/l/YOURFREEPRODUCT1" target="_blank">Buy Print</a>
+    </div>
+  </div>
+
+  <div class="card" onclick="openModal('images/photo2.jpg')">
+    <img src="images/photo2.jpg">
+    <div class="overlay">
+      <a href="https://gumroad.com/l/YOURFREEPRODUCT2" target="_blank">Buy Print</a>
+    </div>
+  </div>
+
+  <div class="card" onclick="openModal('images/photo3.jpg')">
+    <img src="images/photo3.jpg">
+    <div class="overlay">
+      <a href="https://gumroad.com/l/YOURFREEPRODUCT3" target="_blank">Buy Print</a>
+    </div>
+  </div>
+</section>
+
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modal-img">
+</div>
+
+<footer>
+  © 2026 Neon Frame
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
